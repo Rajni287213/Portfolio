@@ -3,8 +3,8 @@ import Navbar from "../Components/Navbar/Navbar";
 import blissfullHome from "../assets/Project_logo/blissfullHome.png";
 import Home from "../assets/project_images/BeanBliss/Home.png";
 import products from "../assets/project_images/BeanBliss/Products.png";
-import About from "../assets/Project_images/BeanBliss/About.png";
-import Menu from "../assets/Project_images/BeanBliss/Menu.png";
+import About from "../assets/project_images/BeanBliss/About.png";
+import Menu from "../assets/project_images/BeanBliss/Menu.png";
 
 
 function Beanbliss() {

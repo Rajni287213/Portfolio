@@ -1,0 +1,6 @@
+
+//how  to deploy project
+// firstly in terminal write npm run build then
+//add project in git 
+//step 1 git init
+// git commit -m "Intial commit"

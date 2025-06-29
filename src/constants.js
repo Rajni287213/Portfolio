@@ -22,7 +22,7 @@ import wordpressLogo from "./assets/tech_logo/wordpress.png";
 import edusphereLogo from "./assets/Project_logo/edusphereLogo.png";
 import gadgetGridImage from "./assets/Project_logo/gadgetGridImage.png";
 import blissfullHome from "./assets/Project_logo/blissfullHome.png";
-import beanHome from "./assets/project_images/Bean Bliss/homepage.png";
+import beanHome from "./assets/project_images/BeanBliss/homepage.png";
 import AndroidStudio from './assets/tech_logo/AndroidStudio.png'
 import homepage from './assets/project_images/RoseGarden/homepage.png'
 import RoseGarden from './assets/project_images/RoseGarden/RoseGarden.pdf'

@@ -1,10 +1,10 @@
 import React from "react";
 import Navbar from "../Components/Navbar/Navbar";
 import blissfullHome from "../assets/Project_logo/blissfullHome.png";
-import Home from "../assets/project_images/Bean Bliss/Home.png";
-import products from "../assets/project_images/Bean Bliss/Products.png";
-import About from "../assets/Project_images/Bean Bliss/About.png";
-import Menu from "../assets/Project_images/Bean Bliss/Menu.png";
+import Home from "../assets/project_images/BeanBliss/Home.png";
+import products from "../assets/project_images/BeanBliss/Products.png";
+import About from "../assets/Project_images/BeanBliss/About.png";
+import Menu from "../assets/Project_images/BeanBliss/Menu.png";
 
 
 function Beanbliss() {

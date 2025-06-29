@@ -3,9 +3,9 @@ import video from "../assets/background.mp4";
 import Navbar from "../Components/Navbar/Navbar";
 import Banner from "../assets/project_images/BlissfullHome/banner.jpg";
 import blissfullHome from "../assets/Project_logo/blissfullHome.png";
-import home from "../assets/Project_images/BlissfullHome/home.png";
-import products from "../assets/Project_images/BlissfullHome/products.png";
-import cart from "../assets/Project_images/BlissfullHome/cart.png";
+import home from "../assets/project_images/BlissfullHome/home.png";
+import products from "../assets/project_images/BlissfullHome/Products.png";
+import cart from "../assets/project_images/BlissfullHome/cart.png";
 
 function BlissfullHome() {
   return (

@@ -3,4 +3,9 @@
 // firstly in terminal write npm run build then
 //add project in git 
 //step 1 git init
+//git add .
 // git commit -m "Intial commit"
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Rajni287213/Portfolio.git
+git push -u origin main

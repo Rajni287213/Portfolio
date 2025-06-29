@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "../../assets/profile-img.jpg";
+import profile from "../../assets/Profile-img.jpg";
 import video from "../../assets/background.mp4";
 import Resume from "../../assets/Rajni_resume.pdf";
 import Tilt from "react-parallax-tilt";

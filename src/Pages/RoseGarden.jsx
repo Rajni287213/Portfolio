@@ -2,8 +2,8 @@ import React from "react";
 import Navbar from "../Components/Navbar/Navbar";
 import Home from "../assets/project_images/RoseGarden/Home.png";
 import Plants from "../assets/project_images/RoseGarden/Plants.png";
-import Gardening from "../assets/Project_images/RoseGarden/Gardening.png";
-import Contact from "../assets/Project_images/RoseGarden/Contact.png";
+import Gardening from "../assets/project_images/RoseGarden/Gardening.png";
+import Contact from "../assets/project_images/RoseGarden/Contact.png";
 
 function RoseGarden() {
   return (

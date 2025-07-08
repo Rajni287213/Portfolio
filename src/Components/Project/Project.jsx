@@ -4,7 +4,7 @@ import { projects } from "../../constants";
 function Project() {
   // useState is a React hook variable to create state variable in functional componant
   const [selectedProject, setSelectedProject] = useState(null);
-  
+
   const handleOpenModel = (project) => {
     setSelectedProject(project);
   };
@@ -104,20 +104,20 @@ function Project() {
                     </span>
                   ))}
                 </div>
-                <div className="flex gap-4">
+                <div className="flex flex-col lg:flex-row gap-4">
                   <a
                     href={selectedProject.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-1/2 bg-gray-700 hover:bg-[#94d58b] text-gray-200 lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
+                    className="flex-1 bg-gray-700 hover:bg-[#94d58b] text-gray-200 px-6 py-2 rounded-xl text-center font-semibold"
                   >
                     View Code
                   </a>
-                   <a
+                  <a
                     href={selectedProject.webapp}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-1/2 bg-gray-700 hover:bg-[#94d58b] text-gray-200 lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
+                    className="flex-1 bg-gray-700 hover:bg-[#94d58b] text-gray-200 px-6 py-2 rounded-xl text-center font-semibold"
                   >
                     View Project
                   </a>

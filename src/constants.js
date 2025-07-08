@@ -133,7 +133,7 @@ export const projects = [
   image: homepage, // replace with actual image import
   tags: ["HTML", "CSS", "Responsive Design", "Gardening", "Contact Form"],
   github: "https://github.com/Rajni287213/ResponsiveWebsiteProjects/tree/main/Garden Website", // update if needed
-  webapp: RoseGarden, // update if deployed
+  webapp: "http://localhost:5173/Beanbliss", // update if deployed
 },
   // {
   //   id: 1,

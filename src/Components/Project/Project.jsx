@@ -68,7 +68,7 @@ function Project() {
 
       {/* pop up model container */}
       {selectedProject && (
-        <div className="fixed inset-0 z-50 flex items justify-center bg-black bg-opacity-90 p-4">
+        <div className="fixed inset-0 z-50 flex items justify-center bg-black bg-opacity-90 p-1">
           <div className="bg-gray-900 rounded-xl shadow-2xl lg:w-full w-[90%] max-w-3xl mb-28 overflow-hidden relative">
             <div className="flex justify-end p-4">
               <button
@@ -82,13 +82,14 @@ function Project() {
             <div className="flex flex-col">
               <div className="w-full flex justify-center bg-gray-800 px-4">
                 <img
+                onClick={() => window.open(selectedProject.webapp, "_blank")}
                   src={selectedProject.image}
                   alt={selectedProject.title}
                   className="lg:w-full w-[95%] object-contain rounded-xl shadow-2xl"
                 />
               </div>
               <div className="lg:p-8 p-6">
-                <h3 className="lg:text-3xl font-bold text-white mb-4 text-md">
+                <h3 className="lg:text-3xl font-bold text-white mb-2 text-md">
                   {selectedProject.title}
                 </h3>
                 <p className="text-gray-400 mb-6 lg:text-base text-xs">

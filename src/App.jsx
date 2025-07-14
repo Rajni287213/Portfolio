@@ -9,6 +9,8 @@ import Contact from "./Components/Contact/Contact";
 import BlissfullHome from "./Pages/BlissfullHome.jsx";
 import BeanBliss from "./Pages/Beanbliss.jsx"
 import RoseGarden from "./Pages/RoseGarden.jsx"
+import BookStore from "./Pages/Bookstore.jsx"
+import HomeDecor from "./Pages/HomeDecor.jsx";
 
 const HomePage = () => {
   return (
@@ -29,6 +31,8 @@ const App = () => {
         <Route path="/BlissfullHome" element={<BlissfullHome />} />
          <Route path="/Beanbliss" element={<BeanBliss />} />
          <Route path="/RoseGarden" element={<RoseGarden />} />
+         <Route path="/Bookstore" element={<BookStore />} />
+         <Route path="/HomeDecor" element={<HomeDecor/>}/>
       </Routes>
     );
   };

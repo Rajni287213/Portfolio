@@ -1,16 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../Components/Navbar/Navbar";
+import Footer from "../Components/Footer/Footer"
 import Home from "../assets/project_images/RoseGarden/Home.png";
 import Plants from "../assets/project_images/RoseGarden/Plants.png";
 import Gardening from "../assets/project_images/RoseGarden/Gardening.png";
 import Contact from "../assets/project_images/RoseGarden/Contact.png";
 
 function RoseGarden() {
+
+  const [selectedImage, setSelectedImage] = useState(null);
+  const handleOpenModel = (image) => {
+    setSelectedImage(image);
+  };
+  const handleCloseModel = (image) =>{
+    setSelectedImage(null);
+  }
   return (
     <div>
       <Navbar />
       <section className=" py-6 font-sans mt-20 md:mt-32 lg:mt-32 overflow-hidden">
-        <div className="text-center py-36 mt-6 bg-[#f9ccce] px-40 items-center">
+        <div className="text-center py-36 mt-6 bg-[#94d58b] px-40 items-center">
           <h2 className="text-center  text-black text-6xl font-bold">
             Rose Garden Website
           </h2>
@@ -23,6 +32,7 @@ function RoseGarden() {
             living.
           </p>
         </div>
+        
          <div className=" bg-[#b6b5b5] p-12 pb-12 px-[12vw] md:px-[7vw] lg:px-[20vw] flex flex-col items-center overflow-hidden gap-4">
                           <div className="flex flex-wrap md:flex-row gap-4 justify-center">
                             <img
@@ -53,6 +63,7 @@ function RoseGarden() {
                           </div>
                         </div>
       </section>
+       <Footer />
     </div>
   );
 }

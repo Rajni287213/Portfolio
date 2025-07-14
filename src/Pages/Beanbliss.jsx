@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../Components/Navbar/Navbar";
+import Footer from "../Components/Footer/Footer"
 import blissfullHome from "../assets/Project_logo/blissfullHome.png";
 import Home from "../assets/project_images/BeanBliss/Home.png";
 import products from "../assets/project_images/BeanBliss/Products.png";
@@ -54,6 +55,7 @@ function Beanbliss() {
                   </div>
                 </div>
       </section>
+       <Footer />
     </>
   );
 }

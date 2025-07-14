@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import { projects } from "../../constants";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
 
 function Project() {
   // useState is a React hook variable to create state variable in functional componant
@@ -27,7 +31,7 @@ function Project() {
           frontend development, UI design, and interactive web applications.
         </p>
       </div>
-
+     
       {/* project grid */}
       <div className="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
@@ -82,10 +86,11 @@ function Project() {
             <div className="flex flex-col">
               <div className="w-full flex justify-center bg-gray-800 px-4">
                 <img
-                onClick={() => window.open(selectedProject.webapp, "_blank")}
+                  onClick={() => window.open(selectedProject.webapp, "_blank")}
                   src={selectedProject.image}
                   alt={selectedProject.title}
-                  className="lg:w-full w-[95%] object-contain rounded-xl shadow-2xl"
+                  title="Click to view project"
+                  className="lg:w-full w-[95%] object-contain rounded-xl shadow-2xl cursor-pointer"
                 />
               </div>
               <div className="lg:p-8 p-6">

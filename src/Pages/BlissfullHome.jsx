@@ -1,6 +1,7 @@
 import React from "react";
 import video from "../assets/background.mp4";
 import Navbar from "../Components/Navbar/Navbar";
+import Footer from "../Components/Footer/Footer"
 import Banner from "../assets/project_images/BlissfullHome/banner.jpg";
 import blissfullHome from "../assets/Project_logo/blissfullHome.png";
 import home from "../assets/project_images/BlissfullHome/home.png";
@@ -71,6 +72,7 @@ function BlissfullHome() {
           </div>
         </div>
       </section>
+       <Footer />
     </>
   );
 }

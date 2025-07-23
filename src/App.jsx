@@ -11,6 +11,7 @@ import BeanBliss from "./Pages/Beanbliss.jsx"
 import RoseGarden from "./Pages/RoseGarden.jsx"
 import BookStore from "./Pages/Bookstore.jsx"
 import HomeDecor from "./Pages/HomeDecor.jsx";
+import Fashion from "./Pages/Fashion.jsx"
 
 const HomePage = () => {
   return (
@@ -33,6 +34,7 @@ const App = () => {
          <Route path="/RoseGarden" element={<RoseGarden />} />
          <Route path="/Bookstore" element={<BookStore />} />
          <Route path="/HomeDecor" element={<HomeDecor/>}/>
+         <Route path="/Fashion" element={<Fashion/>}/>
       </Routes>
     );
   };

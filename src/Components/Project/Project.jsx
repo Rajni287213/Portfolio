@@ -8,6 +8,8 @@ import { Navigation } from "swiper/modules";
 function Project() {
   // useState is a React hook variable to create state variable in functional componant
   const [selectedProject, setSelectedProject] = useState(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const projectsPerPage = 6;
 
   const handleOpenModel = (project) => {
     setSelectedProject(project);
@@ -15,6 +17,13 @@ function Project() {
   const handleCloseModel = (project) => {
     setSelectedProject(null);
   };
+
+//Pagination Logic
+const indexOfLastProject = currentPage * projectsPerPage;
+const indexOfFirstProject = indexOfLastProject - projectsPerPage;
+const currentProjects = projects.slice(indexOfFirstProject, indexOfLastProject);
+const totalPages = Math.ceil(projects.length / projectsPerPage);
+
   return (
     <section
       id="Project"
@@ -34,7 +43,7 @@ function Project() {
      
       {/* project grid */}
       <div className="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project) => (
+        {currentProjects.map((project) => (
           <div
             key={project.id}
             onClick={() => handleOpenModel(project)}
@@ -70,10 +79,43 @@ function Project() {
         ))}
       </div>
 
+       {/* Pagination Controls */}
+      <div className="flex justify-center mt-12 space-x-4">
+        <button
+          onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+          disabled={currentPage === 1}
+          className="bg-gray-800 hover:bg-[#94d58b] text-white px-4 py-2 rounded-lg disabled:opacity-50"
+        >
+          Previous
+        </button>
+
+        {[...Array(totalPages)].map((_, idx) => (
+          <button
+            key={idx + 1}
+            onClick={() => setCurrentPage(idx + 1)}
+            className={`px-4 py-2 rounded-lg ${
+              currentPage === idx + 1
+                ? "bg-[#94d58b] text-black"
+                : "bg-gray-800 text-white hover:bg-gray-700"
+            }`}
+          >
+            {idx + 1}
+          </button>
+        ))}
+
+        <button
+          onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
+          disabled={currentPage === totalPages}
+          className="bg-gray-800 hover:bg-[#94d58b] text-white px-4 py-2 rounded-lg disabled:opacity-50"
+        >
+          Next
+        </button>
+      </div>
+
       {/* pop up model container */}
       {selectedProject && (
-        <div className="fixed inset-0 z-50 flex items justify-center bg-black bg-opacity-90 p-4">
-          <div className="bg-gray-900 rounded-xl shadow-2xl lg:w-full w-[90%] max-w-3xl mb-28 overflow-hidden relative">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4">
+          <div className="bg-gray-900 rounded-xl shadow-2xl lg:w-full w-[90%] max-w-3xl mb-28 overflow-auto relative max-h-[90vh]">
             <div className="flex justify-end p-4">
               <button
                 onClick={handleCloseModel}

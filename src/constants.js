@@ -26,7 +26,9 @@ import beanHome from "./assets/project_images/BeanBliss/homepage.png";
 import AndroidStudio from './assets/tech_logo/AndroidStudio.png'
 import homepage from './assets/project_images/RoseGarden/homepage.png'
 import bookstore from './assets/project_images/BookStore/books.png'
+import HomeDecor from './assets/project_images/HomeDecor/HomeDecor.png'
 import RoseGarden from './assets/project_images/RoseGarden/RoseGarden.pdf'
+import Fashion from './assets/project_images/Fashion/HomePage.png'
 
 
 export const SkillsInfo = [
@@ -146,6 +148,28 @@ export const projects = [
   tags: ["ASP.NET", "C#", "SQL Server", "Web Forms", "Responsive Design", "Login Form"],
   github: "https://github.com/Rajni287213/ResponsiveWebsiteProjects/tree/main/Garden Website", // update if you have a new .NET repo
   webapp: "http://localhost:5173/Bookstore", // replace with deployed link or remove if not deployed
+},
+
+{
+  id: 6,
+  title: "Home Decor",
+  description:
+     "A stylish Home Decor website developed using ASP.NET Web Forms (.aspx) with C# and SQL Server for backend data management. The site features a responsive design showcasing various decor products and collections, enabling users to browse, explore categories, and contact for inquiries. Includes database connectivity and a functional contact form.",
+  image: HomeDecor,
+   tags: ["ASP.NET", "C#", "SQL Server", "Web Forms", "Responsive Design", "Login Form"],
+  github: "https://github.com/Rajni287213/DotNetProjects/tree/main/Home Decor", // update if you have a new .NET repo
+  webapp: "http://localhost:5173/HomeDecor", // replace with deployed link or remove if not deployed
+},
+
+{
+  id: 7,
+  title: "Fashion",
+  description:
+     "A visually appealing Fashion and Jewelry website developed using ASP.NET MVC with C# and SQL Server for backend management. The platform showcases various fashion accessories and jewelry collections, allowing users to browse products, explore categories. Features responsive design, user-friendly navigation, and secure login functionality.", 
+   image: Fashion,
+   tags: ["ASP.NET", "C#", "SQL Server", "MVC", "Responsive Design", "Login Form"],
+  github: "https://github.com/Rajni287213/DotNetProjects/tree/main/Fashion Project", // update if you have a new .NET repo
+  webapp: "http://localhost:5173/Fashion", // replace with deployed link or remove if not deployed
 }
 
 ];

@@ -3,7 +3,7 @@ import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
 import blissfullHome from "../assets/Project_logo/blissfullHome.png";
 import Adminlogin from "../assets/project_images/HomeDecor/adminlogin.png";
-import Userlogin from "../assets/project_images/HomeDecor/login.png";
+import Userlogin from "../assets/project_images/HomeDecor/Login.png";
 import Home from "../assets/project_images/HomeDecor/Home.png";
 import products from "../assets/project_images/HomeDecor/Products.png";
 import Description from "../assets/project_images/HomeDecor/Desc.png";
